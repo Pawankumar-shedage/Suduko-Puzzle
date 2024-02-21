@@ -1,0 +1,31 @@
+.grid-container{
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(9,1fr);
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(222, 222, 253);
+}
+
+/* COL */
+.cell:nth-child(3n){
+    border-right: 2px solid black;
+}
+
+/* ROWS 2x */
+.cell:nth-child(n+19):nth-child(-n+27){
+    border-bottom: 2px solid black;
+}
+.cell:nth-child(n+46):nth-child(-n+54){
+    border-bottom: 2px solid black;
+}
