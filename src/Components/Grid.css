@@ -1,5 +1,6 @@
 .grid-container{
     background-color: rgb(255, 255, 255);
+    color: #000;
     display: grid;
     grid-template-columns: repeat(9,1fr);
     grid-template-rows: repeat(9,1fr);
@@ -12,7 +13,6 @@
     align-items: center;
     height: 50px;
     width: 50px;
-    color: black;
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(222, 222, 253);
 }
